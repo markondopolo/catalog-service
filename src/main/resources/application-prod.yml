@@ -1,0 +1,2 @@
+polar:
+  greeting: "Welcome to the local book catalog! This will appear here only in case prod profile is on. This text is defined in application-prod."
