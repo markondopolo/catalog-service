@@ -1,6 +1,6 @@
-FROM openjdk:17-jdk-slim-buster
-WORKDIR /app
-COPY /target/catalog-service-0.0.1-SNAPSHOT.jar /app/catalog-service.jar
+FROM eclipse-temurin:17
+WORKDIR workspace
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} catalog-service.jar
 ENTRYPOINT ["java", "-jar", "catalog-service.jar"]
-EXPOSE 8080
 
